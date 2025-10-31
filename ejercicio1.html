@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualizar Texto con JS</title>
+    <style>
+        /* Estilos básicos para centrar el contenido */
+        body {
+            font-family: sans-serif;
+            display: grid;
+            place-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+        #miParrafo {
+            font-size: 1.2rem;
+            color: #333;
+            min-height: 1.5rem; /* Para evitar que el botón "salte" */
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <p id="miParrafo"></p>
+        
+        <button onclick="actualizarTexto()">Actualizar Párrafo</button>
+    </div>
+
+    <script>
+        // 3. La función de JavaScript
+        function actualizarTexto() {
+            // Selecciona el elemento del párrafo usando su ID
+            var parrafo = document.getElementById("miParrafo");
+            
+            // Cambia el contenido de texto del párrafo
+            parrafo.textContent = "¡Texto actualizado con Javascript!";
+        }
+    </script>
+
+</body>
+</html>
